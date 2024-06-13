@@ -14,7 +14,7 @@ app.use(exp.json())
 mongoClient.connect(process.env.DB_URL)
 .then(client=>{
     //get db obj
-    const blogdb=client.db('blogdb')
+    const blogdb=client.db('vdb')
     //get collection obj
     const userscollection=blogdb.collection('userscollection')
     const articlescollection=blogdb.collection('articlescollection')
